@@ -8,9 +8,14 @@ import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { FullPortfolio } from './components/FullPortfolio';
 import { ProjectDetail } from './components/ProjectDetail';
+import { Team } from './components/Team';
+import { Careers } from './components/Careers';
+import { PrivacyPolicy } from './components/PrivacyPolicy';
+import { TermsOfService } from './components/TermsOfService';
+import { CookiePolicy } from './components/CookiePolicy';
 import { PortfolioCompany } from './data/portfolio';
 
-type Page = 'home' | 'portfolio' | 'project';
+type Page = 'home' | 'portfolio' | 'project' | 'team' | 'careers' | 'privacy' | 'terms' | 'cookies';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState<Page>('home');
@@ -39,6 +44,12 @@ export default function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const handleNavigate = (page: string) => {
+    setCurrentPage(page as Page);
+    setSelectedProject(null);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <div className="min-h-screen">
       <Header 
@@ -58,7 +69,7 @@ export default function App() {
             <About />
             <Contact />
           </main>
-          <Footer />
+          <Footer onNavigate={handleNavigate} />
         </>
       )}
 
@@ -74,6 +85,26 @@ export default function App() {
           project={selectedProject}
           onBack={handleBackToPortfolio}
         />
+      )}
+
+      {currentPage === 'team' && (
+        <Team onBack={handleBackToHome} />
+      )}
+
+      {currentPage === 'careers' && (
+        <Careers onBack={handleBackToHome} />
+      )}
+
+      {currentPage === 'privacy' && (
+        <PrivacyPolicy onBack={handleBackToHome} />
+      )}
+
+      {currentPage === 'terms' && (
+        <TermsOfService onBack={handleBackToHome} />
+      )}
+
+      {currentPage === 'cookies' && (
+        <CookiePolicy onBack={handleBackToHome} />
       )}
     </div>
   );
