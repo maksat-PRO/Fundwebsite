@@ -4,26 +4,26 @@ import { Award, Globe, Lightbulb, Target } from 'lucide-react';
 const values = [
   {
     icon: Target,
-    title: 'Founder-First',
-    description: 'We partner with visionary founders and support them at every stage of their journey.',
+    title: 'Engineering Roots',
+    description: 'Founded in 2016 as a product engineering company with real delivery obligations and production systems.',
     gradient: 'from-[#007aff] to-[#00c6ff]',
   },
   {
     icon: Lightbulb,
-    title: 'Innovation Driven',
-    description: 'We seek breakthrough technologies that push the boundaries of what\'s possible in sports.',
+    title: 'Platform Thinking',
+    description: 'From custom software delivery to repeatable operating systems, dashboards, data rooms and workflows.',
     gradient: 'from-[#ff9500] to-[#ff6b00]',
   },
   {
     icon: Globe,
-    title: 'Global Reach',
-    description: 'Our network spans 15+ countries, connecting founders with markets worldwide.',
+    title: 'International Direction',
+    description: 'Public materials use anonymized case references; sensitive details are kept for controlled private access.',
     gradient: 'from-[#5856d6] to-[#af52de]',
   },
   {
     icon: Award,
     title: 'Proven Track Record',
-    description: 'Our portfolio includes 5 unicorns and 15+ successful exits across the sports ecosystem.',
+    description: '500+ projects delivered and more than one million users reached through client-facing systems.',
     gradient: 'from-[#34c759] to-[#30d158]',
   },
 ];
@@ -41,46 +41,42 @@ export function About() {
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           >
             <div className="inline-flex items-center px-3 py-1.5 bg-[#34c759]/10 rounded-full mb-6">
-              <span className="text-[13px] text-[#34c759] tracking-tight">About Us</span>
+              <span className="text-[13px] text-[#34c759] tracking-tight">About Maksat.PRO</span>
             </div>
             <h2 className="text-[40px] tracking-tight text-[#1d1d1f] mb-6 leading-[1.1]">
-              Dedicated to the Future of Sports
+              A delivery company evolving into an AI-native operating platform
             </h2>
             <p className="text-[17px] text-[#86868b] mb-6 leading-[1.5]">
-              Founded by former athletes and technology leaders, we understand both the passion 
-              of sports and the power of innovation. Our mission is to accelerate the development 
-              of technologies that make sports safer, more accessible, and more exciting for 
-              athletes and fans alike.
+              Maksat.PRO was founded in 2016 as a hands-on product engineering team. The first years were focused on real systems for clients with operational pressure: event deadlines, participant flows, sports infrastructure, dashboards, mobile applications and integrations.
             </p>
             <p className="text-[17px] text-[#86868b] mb-8 leading-[1.5]">
-              With over $250M in assets under management and a portfolio of 50+ companies, we're 
-              not just investors – we're partners in building the future of sports technology.
+              Today the company combines software delivery, AI workflows and venture infrastructure: founder intake, private access, data rooms, research workflows and portfolio operations.
             </p>
             
             <div className="grid grid-cols-2 gap-8">
               <div className="ios-glass p-4 rounded-[16px] border border-black/[0.08]">
                 <div className="text-[32px] tracking-tight text-[#1d1d1f] mb-1">
-                  2018
+                  2016
                 </div>
                 <p className="text-[13px] text-[#86868b]">Founded</p>
               </div>
               <div className="ios-glass p-4 rounded-[16px] border border-black/[0.08]">
                 <div className="text-[32px] tracking-tight text-[#1d1d1f] mb-1">
-                  120+
+                  500+
                 </div>
-                <p className="text-[13px] text-[#86868b]">Team Members</p>
+                <p className="text-[13px] text-[#86868b]">Projects Delivered</p>
               </div>
               <div className="ios-glass p-4 rounded-[16px] border border-black/[0.08]">
                 <div className="text-[32px] tracking-tight text-[#1d1d1f] mb-1">
-                  $2.5B+
+                  1M+
                 </div>
-                <p className="text-[13px] text-[#86868b]">Portfolio Valuation</p>
+                <p className="text-[13px] text-[#86868b]">Users Reached</p>
               </div>
               <div className="ios-glass p-4 rounded-[16px] border border-black/[0.08]">
                 <div className="text-[32px] tracking-tight text-[#1d1d1f] mb-1">
-                  15
+                  P3
                 </div>
-                <p className="text-[13px] text-[#86868b]">Successful Exits</p>
+                <p className="text-[13px] text-[#86868b]">Operating Platform</p>
               </div>
             </div>
           </motion.div>

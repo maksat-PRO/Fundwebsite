@@ -38,7 +38,7 @@ export function Header({ onNavigateHome, showNavigation = true }: HeaderProps) {
             >
               <div className="w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 mr-3" />
               <span className="text-[17px] tracking-tight text-[#1d1d1f]">
-                SportsTech Ventures
+                Maksat.PRO
               </span>
             </motion.div>
 
